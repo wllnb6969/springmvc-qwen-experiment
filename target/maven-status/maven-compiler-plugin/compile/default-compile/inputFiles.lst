@@ -1,0 +1,4 @@
+/workspaces/springmvc-qwen-experiment/src/main/java/com/example/demo/service/QwenService.java
+/workspaces/springmvc-qwen-experiment/src/main/java/com/example/demo/controller/QwenController.java
+/workspaces/springmvc-qwen-experiment/src/main/java/com/example/demo/model/ImageResult.java
+/workspaces/springmvc-qwen-experiment/src/main/java/com/example/demo/DemoApplication.java

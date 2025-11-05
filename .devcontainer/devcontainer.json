@@ -1,0 +1,20 @@
+{
+  "name": "Java + Maven",
+  "image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "installMaven": true,
+      "installGradle": false
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-spring-boot"
+      ]
+    }
+  },
+  "postCreateCommand": "echo '环境准备完成，欢迎使用 SpringMVC 开发环境！'"
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>图像识别</title>
+</head>
+<body>
+    <h2>图像识别演示（qwen-vl）</h2>
+    <form method="post" action="/vl">
+        <input name="imageUrl" placeholder="输入图片URL" required>
+        <button type="submit">识别</button>
+    </form>
+    <div th:if="${description}">
+        <p><strong>图片：</strong></p>
+        <img th:src="${imageUrl}" alt="识别图片" style="max-width: 300px;">
+        <p><strong>识别结果：</strong><span th:text="${description}"></span></p>
+    </div>
+</body>
+</html>

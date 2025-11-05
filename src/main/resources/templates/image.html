@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>文生图</title>
+</head>
+<body>
+    <h2>文生图演示</h2>
+    <form method="post" action="/image">
+        <input name="prompt" placeholder="描述你想要的画面" required>
+        <button type="submit">生成</button>
+    </form>
+    <div th:if="${imageUrl}">
+        <p><strong>提示词：</strong><span th:text="${prompt}"></span></p>
+        <img th:src="${imageUrl}" alt="生成的图片" style="max-width: 500px;">
+    </div>
+</body>
+</html>

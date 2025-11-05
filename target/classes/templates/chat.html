@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>通义千问对话</title>
+</head>
+<body>
+    <h2>通义千问对话演示</h2>
+    <form method="post" action="/chat">
+        <input name="prompt" placeholder="请输入问题" required>
+        <button type="submit">发送</button>
+    </form>
+    <div th:if="${response}">
+        <p><strong>你：</strong><span th:text="${prompt}"></span></p>
+        <p><strong>通义千问：</strong><span th:text="${response}"></span></p>
+    </div>
+</body>
+</html>
